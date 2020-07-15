@@ -1,5 +1,5 @@
 html{
-    font-family: sans-serif;
+    font-family: 'Monaco', 'Trebuchet MS';
     background-color: #00694E;
     color: white;
     overflow: hidden;
@@ -70,6 +70,13 @@ tr, td, th{
     width: 30%;
     position: absolute;
     left: 0%;
+    top: 40%;
+}
+
+#argo-search{
+    width: 30%;
+    position: absolute;
+    left: 30%;
     top: 40%;
 }
 

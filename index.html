@@ -51,98 +51,82 @@
                 <td>Applications and Services</td>
                 <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=&type=&language=coldfusion">Link</a></td>
             </tr>
-            <tr>
-                <td>Application Resources</td>
-                <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=resource&type=&language=">Link</a></td>
-            </tr>
-            <tr>
-                <td>Application UIs</td>
-                <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=UI&type=&language=">Link</a></td>
-            </tr>
         </table>
 
         <!-- Table with links pertaining to Jira items -->
         <table id="jira">
             <tr>
-                <th colspan="2">Wiki Links</th>
+                <th colspan="2">Jira Links</th>
             </tr>
             <tr>
-                <td>AIS Wiki Home</td>
+                <td>Jira Home</td>
                 <td><a href="https://github.ohio.edu/OIT/">Link</a></td>
             </tr>
             <tr>
-                <td>Environments</td>
+                <td>My Work</td>
                 <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=integration&type=&language=python">Link</a></td>
             </tr>
             <tr>
-                <td>Applications and Services</td>
+                <td>Deployment Board</td>
                 <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=&type=&language=coldfusion">Link</a></td>
             </tr>
             <tr>
-                <td>Application Resources</td>
+                <td>Create Issue</td>
                 <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=resource&type=&language=">Link</a></td>
-            </tr>
-            <tr>
-                <td>Application UIs</td>
-                <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=UI&type=&language=">Link</a></td>
             </tr>
         </table>
 
         <!-- Table with links pertaining to Rancher items -->
         <table id="rancher">
             <tr>
-                <th colspan="2">Wiki Links</th>
+                <th colspan="2">Rancher Links</th>
             </tr>
             <tr>
-                <td>AIS Wiki Home</td>
+                <td>Rancher Home</td>
                 <td><a href="https://github.ohio.edu/OIT/">Link</a></td>
             </tr>
             <tr>
-                <td>Environments</td>
+                <td>Dev/Test Cluster</td>
                 <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=integration&type=&language=python">Link</a></td>
             </tr>
             <tr>
-                <td>Applications and Services</td>
+                <td>QA/Prod Cluster</td>
                 <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=&type=&language=coldfusion">Link</a></td>
             </tr>
             <tr>
-                <td>Application Resources</td>
+                <td>Pipelines</td>
                 <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=resource&type=&language=">Link</a></td>
-            </tr>
-            <tr>
-                <td>Application UIs</td>
-                <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=UI&type=&language=">Link</a></td>
             </tr>
         </table>
 
         <!-- Table with links pertaining to Footprints items -->
         <table id="footprints">
             <tr>
-                <th colspan="2">Wiki Links</th>
+                <th colspan="2">Footprints Links</th>
             </tr>
             <tr>
-                <td>AIS Wiki Home</td>
+                <td>Footprints Home</td>
                 <td><a href="https://github.ohio.edu/OIT/">Link</a></td>
             </tr>
             <tr>
-                <td>Environments</td>
+                <td>SE INC</td>
                 <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=integration&type=&language=python">Link</a></td>
             </tr>
             <tr>
-                <td>Applications and Services</td>
+                <td>SE SRQ</td>
                 <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=&type=&language=coldfusion">Link</a></td>
             </tr>
             <tr>
-                <td>Application Resources</td>
+                <td>WD INC</td>
                 <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=resource&type=&language=">Link</a></td>
             </tr>
             <tr>
-                <td>Application UIs</td>
+                <td>WD SRQ</td>
                 <td><a href="https://github.ohio.edu/OIT?utf8=%E2%9C%93&q=UI&type=&language=">Link</a></td>
             </tr>
         </table>
 
-         <!-- Table with links pertaining to Footprints items -->
+         <!-- Tool to quickly search on Rancher -->
          <table id="rancher-search">
             <tr>
                 <th colspan="2">Search Rancher</th>
@@ -154,7 +138,7 @@
             </tr>
             <tr>
                 <td align="right">
-                    *Environment:
+                    * Environment:
                         <select id="rancherEnv">
                         <option value="">Select environment</option>
                         <option value="manual">DEV</option>
@@ -166,7 +150,7 @@
             </tr>
             <tr>
                 <td align="right">
-                    *Type:
+                    * Type:
                         <select id="rancherType">
                         <option value="">Select search type</option>
                         <option value="manual">WORKLOAD</option>
@@ -177,7 +161,36 @@
             </tr>
             <tr>
                 <td>
-                    <input type="button" class="span-wide" onclick="searchRancher()" value="Begin Search">
+                    <input id="rancherApp" type="button" class="span-wide" onclick="searchRancher()" value="Begin Search">
+                </td>
+            </tr>
+        </table>
+
+        <!-- Tool to quickly search on Argo -->
+        <table id="argo-search">
+            <tr>
+                <th colspan="2">Search Argo</th>
+            </tr>
+            <tr>
+                <td>
+                    <input class="span-wide" type="text" value="* Please enter an application name" onfocus=this.value=''>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    * Environment:
+                        <select id="argoEnv">
+                        <option value="">Select environment</option>
+                        <option value="manual">DEV</option>
+                        <option value="online">TEST</option>
+                        <option value="online">QA</option>
+                        <option value="online">PROD</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="argoApp" type="button" class="span-wide" onclick="searchRancher()" value="Begin Search">
                 </td>
             </tr>
         </table>
