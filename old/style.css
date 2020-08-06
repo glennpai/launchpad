@@ -1,0 +1,103 @@
+html{
+    font-family: 'Monaco', 'Trebuchet MS';
+    background-color: #00694E;
+    color: white;
+    overflow: hidden;
+}
+
+a{
+    color: #CDA077;
+}
+
+table{
+    width: 20%;
+    border-style: outset;
+    border-width: 4px;
+    border-color: darkgray;
+}
+
+th{
+    background-color: #CDA077;
+    color: black;
+    text-align: left;
+}
+
+tr, td, th{
+    border-style: solid;
+    border-width: 2px;
+}
+
+.span-wide{
+    width: 100%;
+}
+
+#body-back{
+    position: relative;
+    height: 90%;
+}
+
+#git{
+    position: absolute;
+    left: 0%;
+    top: 0;
+}
+
+#wiki{
+    position: absolute;
+    left: 20%;
+    top: 0;
+}
+
+#jira{
+    position: absolute;
+    left: 40%;
+    top: 0;
+}
+
+#rancher{
+    position: absolute;
+    left: 60%;
+    top: 0;
+}
+
+#footprints{
+    position: absolute;
+    left: 80%;
+    top: 0;
+}
+
+#rancher-search{
+    width: 30%;
+    position: absolute;
+    left: 0%;
+    top: 40%;
+}
+
+#argo-search{
+    width: 30%;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+}
+
+#footer-div{
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(205, 161, 119, 0.55);
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+#footer{
+    margin-top: 0.75em;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#contact{
+    background: inherit;
+    color: white;
+}
