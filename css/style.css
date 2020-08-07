@@ -3,52 +3,72 @@
     grid-template-rows: auto 1fr auto;
     grid-template-columns: repeat(3, 1fr);
     height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+    background: rgb(230,152,228);
+    background: linear-gradient(90deg, rgba(230,152,228,1) 0%, rgba(82,82,255,1) 100%);
+}
+
+a {
+    color: white;
 }
 
 header, footer {
+    border-radius: 2em;
+    border-width: 100%;
+    border-style: inset;
+    border-color: rgba(135, 206, 250, 0.411);
+    color: rgb(230,152,228);
     grid-column: 1/4;
-    background-color: tan;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-header h1 {
-    color: blue;
+header {
+    font-size: 4em;
 }
 
 footer h3 {
-    border-radius: 1em;
-    border-width: 100%;
-    border-style: inset;
-    border-color: white;
-    margin: 0.5em 0.5em;
+    margin: 1px;
+    font-size: 0.75em;
     font-family: Tahoma, Geneva, sans-serif;
-    font-size: 0.5em;
-    padding: 0.75em;
-}
-
-.column h2 {
-    align-items: top;
-    color: red;
+    text-shadow: 0;
 }
 
 .column {
-    font-family: "Lucida Console", Monaco, monospace;
-    display: flex;
+    border-radius: 2em;
+    border-width: 100%;
+    border-style: inset;
+    border-color: rgba(135, 206, 250, 0.411);
+    background-color: rgba(79, 134, 168, 0.075);
+}
+
+.column .section-head {
     justify-content: center;
     align-items: center;
+    vertical-align: middle;
+    margin: 10px 20px;
+    display: flex;
+    padding: 0px;
+    font-size: 3em;
+    color: rgb(230,152,228);
 }
 
-#left-bar{
-    background-color: bisque;
+.column .section-content {
+    font-family: "Lucida Console", Monaco, monospace;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    line-height: 150%;
+    color: white;
 }
 
-#mid-bar{
-    background-color: skyblue;
-}
-
-#right-bar{
-    background-color: lightcoral;
-}
